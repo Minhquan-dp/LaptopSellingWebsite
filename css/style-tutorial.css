@@ -158,8 +158,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
 }
 #main-tutorial #container {
-    width: 2000px;
-    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
