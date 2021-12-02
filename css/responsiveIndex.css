@@ -28,10 +28,10 @@
     }
 }
 
-
 @media (max-width: 740px) {
     #main #content .product .product-items {
-        width: 207px;
+        /*width: 207px;*/
+        width: calc(100vw / 2);
     }
     #main #content .product .product-item-big{
         margin: 16px 0 16px 0;
