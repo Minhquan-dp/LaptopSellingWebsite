@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" href="../css/style-product.css">
+    <link href="../css/responsiveIndex.css" rel="stylesheet">
     <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -19,46 +20,53 @@
 <div id="header">
     <a href="index.html">
         <div class="header_logo">
-            <img src="../image/img_1.png" alt="" class="logo">
+            <!--                <img src="../image/img_1.png" alt="" class="logo">-->
         </div>
     </a>
-    <div class="header_search">
-
+    <form action="" class="header_search">
         <div class="search">
-            <input type="text" placeholder="Nhập từ khóa cần tìm kiếm" class="header_input-search">
-            <a href="" role="button" class="header_btn-search">
+            <input type="text" required placeholder="Nhập từ khóa cần tìm kiếm ..." class="header_input-search">
+            <button role="button" class="header_btn-search">
                 <i class="fas fa-search"></i>
-            </a>
+            </button>
         </div>
-    </div>
-    <div class="header_list">
+    </form>
+    <div id="header-list-id"  class="header_list">
         <ul class="header_list-item">
             <li class="header_sub-list">
-                <a class="hover-header" href="">
-                    <i class="font-32 hover-header fas fa-percent"></i>Sản phẩm
+                <a class="font-14 hover-header" href="#">
+                    <i class="hover-header1 fas fa-percent"></i>Sản phẩm
                 </a>
             </li>
             <li class="header_sub-list">
-                <a class="hover-header" href="tutorial-page.html">
-                    <i class="font-32 hover-header fas fa-clipboard-check"></i>Hướng dẫn
+                <a class="font-14 hover-header" href="tutorial-page.html">
+                    <i class="hover-header1 fas fa-clipboard-check"></i>Hướng dẫn
                 </a>
             </li>
             <li class="header_sub-list">
-                <a class="hover-header" href="about-us.html">
-                    <i class="font-32 hover-header fas fa-users"></i>Thông tin
+                <a class="font-14 hover-header" href="about-us.html">
+                    <!--                        <i class="hover-header1 fas fa-bell"></i>-->
+                    <i class="hover-header1 fas fa-users"></i>Thông tin
                 </a>
             </li>
             <li class="header_sub-list">
-                <a class="hover-header" href="Cart.html">
-                    <i class="font-32 hover-header fas fa-shopping-cart"></i>Giỏ hàng
+                <a class="font-14 hover-header" href="Cart.html">
+                    <i class="hover-header1 fas fa-shopping-cart"></i>Giỏ hàng
                 </a>
             </li>
             <li class="header_sub-list">
-                <a class="hover-header js-btn-login" role="button">
-                    <i class="font-32 hover-header fas fa-user"></i>Đăng nhập
+                <a class="font-14 hover-header js-btn-login" role="button">
+                    <i class="hover-header1 fas fa-user"></i>Đăng nhập
                 </a>
             </li>
         </ul>
+    </div>
+
+    <div id="mobile-menu" class="menu-mobile-class">
+        <i class="menu-mobile-btn ti-menu"></i>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
     </div>
 </div>
 <div id="main">
@@ -384,6 +392,17 @@
         </form>
     </div>
 </div>
+<!--Back to top-->
+<button id="myBtn">&#8593;</button>
 </body>
 <script src="../js/register.js"></script>
+<script crossorigin="anonymous" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../js/nav-responsive.js"></script>
+<script src="../js/BackToTop.js"></script>
+<script src="../js/Scroll-Indicator.js"></script>
 </html>
