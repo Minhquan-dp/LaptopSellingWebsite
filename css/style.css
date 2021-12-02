@@ -37,6 +37,10 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../image/img_1.png");
 }
 
 #header .header_logo .logo {
@@ -78,6 +82,10 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#header .menu-mobile-class {
+    display: none;
 }
 
 #header .header_list {
@@ -620,6 +628,7 @@ body, html {
     cursor: pointer;
     border-left: none;
     border-radius: 0 5px 5px 0;
+    top: 35%;
 }
 
 .slick-next {
@@ -633,6 +642,7 @@ body, html {
     cursor: pointer;
     border-right: none;
     border-radius: 5px 0 0 5px;
+    top: 35%;
 }
 
 #main #content .bestseller .product-bestseller-items {
@@ -666,7 +676,7 @@ body, html {
 }
 
 #main #content .product-bestseller .img-product-bestseller {
-    width: 217px;
+    /*width: 217px;*/
     height: 217px;
     /*margin: auto;*/
     transition: 0.3s;

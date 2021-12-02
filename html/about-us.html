@@ -7,6 +7,10 @@
     <title>About us</title>
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/responsiveIndex.css" rel="stylesheet">
+    <link href="../fonts/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="../fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
           integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -14,9 +18,9 @@
 <body>
 <div id="about-us">
     <div id="header">
-        <a href="index.html">
+        <a href="#">
             <div class="header_logo">
-                <img src="../image/img_1.png" alt="" class="logo">
+                <!--                <img src="../image/img_1.png" alt="" class="logo">-->
             </div>
         </a>
         <form action="" class="header_search">
@@ -27,7 +31,7 @@
                 </button>
             </div>
         </form>
-        <div class="header_list">
+        <div id="header-list-id"  class="header_list">
             <ul class="header_list-item">
                 <li class="header_sub-list">
                     <a class="font-14 hover-header" href="">
@@ -56,6 +60,10 @@
                     </a>
                 </li>
             </ul>
+        </div>
+
+        <div id="mobile-menu" class="menu-mobile-class">
+            <i class="menu-mobile-btn ti-menu"></i>
         </div>
     </div>
     <div id="content">
@@ -199,4 +207,11 @@
 </div>
 </body>
 <script src="../js/register.js"></script>
+<script crossorigin="anonymous" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../js/nav-responsive.js"></script>
 </html>
