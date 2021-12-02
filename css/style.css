@@ -963,7 +963,7 @@ body, html {
     height: 8px;
     background: #ccc;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
 }
 .progress-bar{
     height: 8px;
