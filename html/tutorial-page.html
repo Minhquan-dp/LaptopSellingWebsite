@@ -19,14 +19,14 @@
 
 <div id="main-tutorial">
     <div id="header">
-        <a href="index.html">
+        <a href="#">
             <div class="header_logo">
                 <!--                <img src="../image/img_1.png" alt="" class="logo">-->
             </div>
         </a>
         <form action="" class="header_search">
             <div class="search">
-                <input class="header_input-search" placeholder="Nhập từ khóa cần tìm kiếm ..." required type="text">
+                <input class="header_input-search" placeholder="Nhập từ khóa cần tìm kiếm" required type="text">
                 <button class="header_btn-search" role="button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -40,17 +40,16 @@
                     </a>
                 </li>
                 <li class="header_sub-list">
-                    <a class="font-14 hover-header" href="#">
+                    <a class="font-14 hover-header" href="tutorial-page.html">
                         <i class="hover-header1 fas fa-clipboard-check"></i>Hướng dẫn
                     </a>
                 </li>
                 <li class="header_sub-list">
                     <a class="font-14 hover-header" href="about-us.html">
-                        <!--                        <i class="hover-header1 fas fa-bell"></i>-->
                         <i class="hover-header1 fas fa-users"></i>Thông tin
                     </a>
                 </li>
-                <li class="header_sub-list">
+                <li id="li-cart" class="header_sub-list">
                     <a class="font-14 hover-header" href="Cart.html">
                         <i class="hover-header1 fas fa-shopping-cart"></i>Giỏ hàng
                     </a>
@@ -66,8 +65,73 @@
         <div class="menu-mobile-class" id="mobile-menu">
             <i class="menu-mobile-btn ti-menu"></i>
         </div>
+
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
+        </div>
+
+
+    </div>
+
+    <div id="cart-hover" class="hover-cart">
+        <div class="cover-cart-item">
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+        </div>
+        <div class="total-cart">
+            <div class="total-price-infor">
+                <div class="total-product">Tổng tiền (2) sản phẩm</div>
+                <div class="total-price">11.240.000đ</div>
+            </div>
+            <div role="button" class="btn-view-cart"><a href="" class="btn-tt">Xem giỏ hàng</a></div>
         </div>
     </div>
     <div id="container">
@@ -187,4 +251,5 @@
 <script src="../js/nav-responsive.js"></script>
 <script src="../js/BackToTop.js"></script>
 <script src="../js/Scroll-Indicator.js"></script>
+<script src="../js/visibleCart.js"></script>
 </html>

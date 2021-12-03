@@ -23,18 +23,18 @@
     <div id="header">
         <a href="#">
             <div class="header_logo">
-<!--                <img src="../image/img_1.png" alt="" class="logo">-->
+                <!--                <img src="../image/img_1.png" alt="" class="logo">-->
             </div>
         </a>
         <form action="" class="header_search">
             <div class="search">
-                <input type="text" required placeholder="Nhập từ khóa cần tìm kiếm" class="header_input-search">
-                <button role="button" class="header_btn-search">
+                <input class="header_input-search" placeholder="Nhập từ khóa cần tìm kiếm" required type="text">
+                <button class="header_btn-search" role="button">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
         </form>
-        <div id="header-list-id" class="header_list">
+        <div class="header_list" id="header-list-id">
             <ul class="header_list-item">
                 <li class="header_sub-list">
                     <a class="font-14 hover-header" href="product-page.html">
@@ -51,7 +51,7 @@
                         <i class="hover-header1 fas fa-users"></i>Thông tin
                     </a>
                 </li>
-                <li class="header_sub-list">
+                <li id="li-cart" class="header_sub-list">
                     <a class="font-14 hover-header" href="Cart.html">
                         <i class="hover-header1 fas fa-shopping-cart"></i>Giỏ hàng
                     </a>
@@ -64,12 +64,76 @@
             </ul>
         </div>
 
-        <div id="mobile-menu" class="menu-mobile-class">
+        <div class="menu-mobile-class" id="mobile-menu">
             <i class="menu-mobile-btn ti-menu"></i>
         </div>
 
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
+        </div>
+
+
+    </div>
+
+    <div id="cart-hover" class="hover-cart">
+        <div class="cover-cart-item">
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+        </div>
+        <div class="total-cart">
+            <div class="total-price-infor">
+                <div class="total-product">Tổng tiền (2) sản phẩm</div>
+                <div class="total-price">11.240.000đ</div>
+            </div>
+            <div role="button" class="btn-view-cart"><a href="" class="btn-tt">Xem giỏ hàng</a></div>
         </div>
     </div>
     <div id="slider">
@@ -95,14 +159,14 @@
                 </div>
                 <div class="outstand-product">
                     <div class="outstand-product-items">
-                        <a href="" class="click-css">
+                        <a class="click-css" href="">
                             <div class="img-outstand outstand1">
                             </div>
                         </a>
                         <div class="title-outstand">Lenovo</div>
                     </div>
                     <div class="outstand-product-items">
-                        <a href="" class="click-css">
+                        <a class="click-css" href="">
                             <div class="img-outstand outstand2">
 
                             </div>
@@ -110,7 +174,7 @@
                         <div class="title-outstand">Asus</div>
                     </div>
                     <div class="outstand-product-items">
-                        <a href="" class="click-css">
+                        <a class="click-css" href="">
                             <div class="img-outstand outstand3">
 
                             </div>
@@ -118,7 +182,7 @@
                         <div class="title-outstand">Msi</div>
                     </div>
                     <div class="outstand-product-items">
-                        <a href="" class="click-css">
+                        <a class="click-css" href="">
                             <div class="img-outstand outstand4"></div>
                         </a>
                         <div class="title-outstand">HP</div>
@@ -132,14 +196,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -152,7 +216,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -165,7 +229,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -178,7 +242,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -198,14 +262,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -218,7 +282,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -231,7 +295,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -244,7 +308,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -266,14 +330,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -286,7 +350,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -299,7 +363,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -312,7 +376,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -332,14 +396,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -352,7 +416,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -365,7 +429,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -378,7 +442,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -400,14 +464,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -420,7 +484,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -433,7 +497,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -446,7 +510,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -466,14 +530,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -486,7 +550,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -499,7 +563,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -512,7 +576,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -534,14 +598,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -554,7 +618,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -567,7 +631,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -580,7 +644,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -600,14 +664,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -620,7 +684,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -633,7 +697,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -646,7 +710,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -668,14 +732,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -688,7 +752,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -701,7 +765,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -714,7 +778,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -734,14 +798,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -754,7 +818,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -767,7 +831,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -780,7 +844,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -802,14 +866,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -822,7 +886,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -835,7 +899,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -848,7 +912,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -868,14 +932,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -888,7 +952,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -901,7 +965,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -914,7 +978,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -936,14 +1000,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">LAPTOP - MACBOOK</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling img-product-selling1"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top1">
                                     <div class="title-product-item">
                                         <p>MSI Gaming</p>
@@ -956,7 +1020,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top2">
                                     <div class="title-product-item">
                                         <p>Lễ hội HP</p>
@@ -969,7 +1033,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>LG Gram</p>
@@ -982,7 +1046,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>Lenovo</p>
@@ -1002,14 +1066,14 @@
                     <div class="title-product">
                         <div class="border-product"></div>
                         <div class="title-main-product">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
-                        <a href="" class="view-all">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        <a class="view-all" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="product-cover">
-                        <a href="" class="product-hover-selling">
+                        <a class="product-hover-selling" href="">
                             <div class="product-selling  img-product-selling2"></div>
                         </a>
                         <div class="product-item-cover">
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-top1">
                                     <div class="title-product-item">
                                         <p>PC</p>
@@ -1022,7 +1086,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-top2">
                                     <div class="title-product-item">
                                         <p>SSD</p>
@@ -1035,7 +1099,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items border-item-bottom1">
                                     <div class="title-product-item">
                                         <p>Màn hình gaming</p>
@@ -1048,7 +1112,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="product-hover-items">
+                            <a class="product-hover-items" href="">
                                 <div class="product-items  border-item-bottom2">
                                     <div class="title-product-item">
                                         <p>RTX 30 Series</p>
@@ -1071,82 +1135,10 @@
                 <div class="title-bestseller">
                     <div class="border-bestseller"></div>
                     <div class="title-main-bestseller">Bán chạy nhất</div>
-                    <a href="" class="view-all-bestseller">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                    <a class="view-all-bestseller" href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="product-bestseller">
-                    <a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
-                        <div class="product-bestseller-items">
-                            <div class="img-product-bestseller img-product-sell1"></div>
-                            <div class="product-bestseller-name">
-                                <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
-                                <div class="product-status">Còn 1 sản phẩm</div>
-                            </div>
-                            <div class="product-price">228.000 ₫</div>
-                        </div>
-                    </a><a href="" class="click-action">
+                    <a class="click-action" href="">
                         <div class="product-bestseller-items">
                             <div class="img-product-bestseller img-product-sell1"></div>
                             <div class="product-bestseller-name">
@@ -1164,8 +1156,80 @@
                         </div>
                         <div class="product-price">228.000 ₫</div>
                     </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
+                </a><a class="click-action" href="">
+                    <div class="product-bestseller-items">
+                        <div class="img-product-bestseller img-product-sell1"></div>
+                        <div class="product-bestseller-name">
+                            <div class="product-name">Đế tản nhiệt Laptop DEEPCOOL Windpal Mini</div>
+                            <div class="product-status">Còn 1 sản phẩm</div>
+                        </div>
+                        <div class="product-price">228.000 ₫</div>
+                    </div>
                 </a>
-                    <a href="" class="click-action">
+                    <a class="click-action" href="">
                         <div class="product-bestseller-items">
                             <div class="img-product-bestseller  img-product-sell2"></div>
                             <div class="product-bestseller-name">
@@ -1175,7 +1239,7 @@
                             <div class="product-price">229.000 ₫</div>
                         </div>
                     </a>
-                    <a href="" class="click-action">
+                    <a class="click-action" href="">
                         <div class="product-bestseller-items">
                             <div class="img-product-bestseller  img-product-sell3"></div>
                             <div class="product-bestseller-name">
@@ -1185,7 +1249,7 @@
                             <div class="product-price">157.000 ₫</div>
                         </div>
                     </a>
-                    <a href="" class="click-action">
+                    <a class="click-action" href="">
                         <div class="product-bestseller-items">
                             <div class="img-product-bestseller  img-product-sell4"></div>
                             <div class="product-bestseller-name">
@@ -1195,7 +1259,7 @@
                             <div class="product-price">172.000 ₫</div>
                         </div>
                     </a>
-                    <a href="" class="click-action">
+                    <a class="click-action" href="">
                         <div class="product-bestseller-items">
                             <div class="img-product-bestseller  img-product-sell5"></div>
                             <div class="product-bestseller-name">
@@ -1212,7 +1276,8 @@
     <div id="footer">
         <div class="footer-main">
             <div class="footer-element">
-                <a class="footer-icon" href="https://github.com/unlocker1205/LaptopSellingWebsite" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="footer-icon" href="https://github.com/unlocker1205/LaptopSellingWebsite" target="_blank"><i
+                        class="fab fa-github"></i></a>
                 <a class="footer-icon" href="" target="_blank"><i class="fas fa-globe-asia"></i></a>
                 <a class="footer-icon" href="" target="_blank"><i class="fas fa-users"></i></a>
                 <p class="copyright">Design by Team 1 © Web programming 2021</p>
@@ -1220,68 +1285,68 @@
         </div>
     </div>
 </div>
-<div id="login-main" class="js-login">
+<div class="js-login" id="login-main">
     <div class="login js-login-container">
         <div class="title-login">
-            <a role="button" class="close-login"></a>
+            <a class="close-login" role="button"></a>
             <h1 class="title-login-main">Đăng nhập</h1>
             <p class="slogan-login">Hãy tham gia cùng chúng tôi</p>
         </div>
         <div class="border"></div>
         <form action="" class="login-form">
             <div class="input-login">
-                <input type="text" required placeholder="Tên đăng nhập" class="input-items">
-                <input type="password" required placeholder="Mật khẩu" class="input-items">
+                <input class="input-items" placeholder="Tên đăng nhập" required type="text">
+                <input class="input-items" placeholder="Mật khẩu" required type="password">
             </div>
             <button class="btn-login">Đăng nhập</button>
         </form>
         <div class="forgot-pass-main">
-            <a role="button" class="forgot-pass js-forgot-pass">Quên mật khẩu</a>
+            <a class="forgot-pass js-forgot-pass" role="button">Quên mật khẩu</a>
         </div>
         <div class="border"></div>
         <div class="new-account">
-            <a role="button" class="btn-new-account js-new-account">Tạo tài khoản mới</a>
+            <a class="btn-new-account js-new-account" role="button">Tạo tài khoản mới</a>
         </div>
     </div>
 </div>
-<div id="forgot-main" class="js-forgot">
+<div class="js-forgot" id="forgot-main">
     <div class="forgot js-forgot-container">
         <div class="title-forgot">
-            <a role="button" class="close-forgot"></a>
+            <a class="close-forgot" role="button"></a>
             <h1 class="title-forgot-main">Quên mật khẩu</h1>
             <p class="slogan-forgot">Chúng tôi sẽ hỗ trợ tận tình</p>
         </div>
         <div class="border"></div>
         <form action="" class="forgot-form">
             <div class="input-forgot">
-                <input type="text" required placeholder="Tên đăng nhập" class="input-items">
-                <input type="password" required placeholder="Mật khẩu gần nhất" class="input-items">
+                <input class="input-items" placeholder="Tên đăng nhập" required type="text">
+                <input class="input-items" placeholder="Mật khẩu gần nhất" required type="password">
             </div>
             <button class="btn-forgot">Tìm tài khoản</button>
         </form>
         <div class="border"></div>
         <div class="come-back">
-            <a role="button" class="btn-come-back js-come-back">Quay trở lại đăng nhập</a>
+            <a class="btn-come-back js-come-back" role="button">Quay trở lại đăng nhập</a>
         </div>
     </div>
 </div>
-<div id="register-main" class="js-register">
+<div class="js-register" id="register-main">
     <div class="register js-register-container">
         <div class="title-register">
-            <a role="button" class="close-register js-close-icon"><i class="fas fa-times"></i></a>
+            <a class="close-register js-close-icon" role="button"><i class="fas fa-times"></i></a>
             <h1 class="title-register-main">Đăng kí</h1>
             <p class="slogan-register">Nhanh chóng và dễ dàng</p>
         </div>
         <div class="border"></div>
         <form action="" class="register-form">
             <div class="input-register">
-                <input type="text" required placeholder="Họ" class="input-item-haft left">
-                <input type="text" required placeholder="Tên" class="input-item-haft right">
-                <input type="text" required placeholder="Tên đăng nhập" class="input-items">
-                <input type="password" required placeholder="Mật khẩu mới" class="input-items">
+                <input class="input-item-haft left" placeholder="Họ" required type="text">
+                <input class="input-item-haft right" placeholder="Tên" required type="text">
+                <input class="input-items" placeholder="Tên đăng nhập" required type="text">
+                <input class="input-items" placeholder="Mật khẩu mới" required type="password">
             </div>
             <div class="register-div">
-                <a role="button" class="btn-register">Đăng kí</a>
+                <a class="btn-register" role="button">Đăng kí</a>
             </div>
         </form>
     </div>
@@ -1302,4 +1367,5 @@
 <script src="../js/nav-responsive.js"></script>
 <script src="../js/BackToTop.js"></script>
 <script src="../js/Scroll-Indicator.js"></script>
+<script src="../js/visibleCart.js"></script>
 </html>
