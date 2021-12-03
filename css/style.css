@@ -28,7 +28,7 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 99;
 }
 
 #header .header_logo {
@@ -141,9 +141,9 @@ body, html {
 #header .header_list .header_sub-list:hover i {
     color: #ffffff;
 }
-#header .header_list .header_sub-list:hover a {
-    color: #ffffff;
-}
+/*#header .header_list .header_sub-list:hover a {*/
+/*    color: #ffffff;*/
+/*}*/
 
 #header .header_list .header_sub-list:hover .hover-header {
     color: #ffffff;
@@ -964,6 +964,7 @@ body, html {
     background: #ccc;
     position: absolute;
     bottom: -8px;
+    /*z-index: -10;*/
 }
 .progress-bar{
     height: 8px;
@@ -992,4 +993,106 @@ body, html {
 #myBtn:hover {
     transition: 0.3s;
     opacity: 0.8;
+}
+
+.hover-cart {
+    z-index: 1000;
+    position: fixed;
+    width: 385px;
+    height: auto;
+    background-color: white;
+    right: 125px;
+    word-wrap: break-word;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 0 0 10px 10px;
+    top: 79px;
+    display: none;
+    /* justify-content: center; */
+    /* bottom: 0; */
+}
+
+.hover-cart .cover-cart-item {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    height: 250px;
+}
+
+.hover-cart .cart-item {
+    display: flex;
+    margin-top: 4px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.hover-cart .img-cart-item {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hover-cart .details-cart-item {
+    height: 80px;
+    width: 256px;
+    margin-left: 12px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.hover-cart .infor-cart-item {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px 0 4px 0;
+}
+
+.hover-cart .num-cart-item {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.3;
+    margin: 4px 0 4px 0;
+}
+
+.hover-cart .price-cart-item {
+    font-weight: 700;
+    margin: 4px 0 4px 0;
+}
+
+
+
+.hover-cart .total-cart {
+    height: auto;
+    /*background-color: #1435c3;*/
+    width: 100%;
+    padding: 8px;
+}
+
+.hover-cart .total-price-infor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.hover-cart .total-price {
+    font-weight: 800;
+    color: crimson;
+}
+
+.hover-cart .btn-view-cart {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.hover-cart .btn-view-cart a {
+    background-color: #1435c3;
+    padding: 10px 127px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
 }
