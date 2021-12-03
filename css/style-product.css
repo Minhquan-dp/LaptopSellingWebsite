@@ -1416,3 +1416,20 @@ body, html {
     text-decoration: none;
     border-radius: 10px;
 }
+
+.icon-cart {
+    width: 22px;
+    height: 22px;
+    background-color:  #ff4d4d;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
