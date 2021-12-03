@@ -174,34 +174,51 @@ body{
 }
 
 /*End CSS header top*/
-/*#container{*/
-/*    width: auto;*/
-/*}*/
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
+
+/*Start content*/
+#main-tutorial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#main-tutorial #container {
-    background-position: center;
+#container {
+    width: 60%;
+    height: auto;
+    margin-top: 88px;
+    /*padding: 12px 50px 12px 50px;*/
+    display: flex;
+    align-content: center;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-tutorial #container .step {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+#main-tutorial .img-tutorial {
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 45%;
+    margin-bottom: 16px;
 }
-#main-tutorial #container .container-fluid{
-    padding-top: 50px;
+
+#main-tutorial .content-tutorial {
+    margin-bottom: 12px;
 }
-#main-tutorial #container .container-fluid .news-article{
-    text-align: left;
-}
-#main-tutorial #container .container-fluid .news1-article{
+
+#main-tutorial #container .title-tutorial {
+    width: 100%;
     text-align: center;
-    color: red;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 42px;
 }
-#main-tutorial #container .container-fluid .news2-article{
-    text-align: left;
-    color: red;
-    font-size: 20px;
-}
+/*End content*/
 /*Start CSS footer*/
 #footer {
     /*width: 100%;*/
