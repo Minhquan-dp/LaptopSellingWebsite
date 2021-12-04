@@ -118,4 +118,8 @@
     #about-us .member .member-items{
         margin: 27px 0 27px 0;
     }
+
+    .slick-dots {
+        justify-content: flex-start;
+    }
 }

@@ -9,10 +9,10 @@ body, html {
     background-color: rgba(204, 204, 202, 0.3);
     /*overflow-y: scroll;*/
     scroll-behavior: smooth;
-    font-family: roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-14{
+.font-14 {
     font-size: 14px;
 }
 
@@ -72,7 +72,7 @@ body, html {
     border-radius: 5px;
     color: #fff;
     background-color: #1435c3;
-    cursor:  pointer;
+    cursor: pointer;
     border: none;
 }
 
@@ -141,6 +141,7 @@ body, html {
 #header .header_list .header_sub-list:hover i {
     color: #ffffff;
 }
+
 /*#header .header_list .header_sub-list:hover a {*/
 /*    color: #ffffff;*/
 /*}*/
@@ -189,7 +190,7 @@ body, html {
     top: 50%;
     width: 75px;
     height: 75px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #cccccc;
     cursor: pointer;
 }
@@ -285,6 +286,7 @@ body, html {
     margin-top: 88px;
     /*background-color: darkgray;*/
     margin-bottom: 24px;
+    position: relative;
 }
 
 #main #content .product {
@@ -623,7 +625,7 @@ body, html {
     z-index: 1;
     width: 40px;
     height: 40px;
-    background-color: rgba(1,1,1,0.1);
+    background-color: rgba(1, 1, 1, 0.1);
     font-size: 16px;
     cursor: pointer;
     border-left: none;
@@ -637,7 +639,7 @@ body, html {
     z-index: 1;
     width: 40px;
     height: 40px;
-    background-color: rgba(1,1,1,0.1);
+    background-color: rgba(1, 1, 1, 0.1);
     font-size: 16px;
     cursor: pointer;
     border-right: none;
@@ -958,7 +960,7 @@ body, html {
 /*End CSS register*/
 
 /*Scroll Indicator*/
-.progress-container{
+.progress-container {
     width: 100%;
     height: 8px;
     background: #ccc;
@@ -966,7 +968,8 @@ body, html {
     bottom: -8px;
     /*z-index: -10;*/
 }
-.progress-bar{
+
+.progress-bar {
     height: 8px;
     background: linear-gradient(to right, #FC5C7D, #6A82FB);
     width: 0%;
@@ -990,6 +993,7 @@ body, html {
     cursor: pointer;
     display: none;
 }
+
 #myBtn:hover {
     transition: 0.3s;
     opacity: 0.8;
@@ -1066,7 +1070,6 @@ body, html {
 }
 
 
-
 .hover-cart .total-cart {
     height: auto;
     /*background-color: #1435c3;*/
@@ -1079,6 +1082,7 @@ body, html {
     justify-content: space-between;
     margin-bottom: 16px;
 }
+
 .hover-cart .total-price {
     font-weight: 800;
     color: crimson;
@@ -1101,7 +1105,7 @@ body, html {
 .icon-cart {
     width: 25px;
     height: 25px;
-    background-color:  #ff4d4d;
+    background-color: #ff4d4d;
     position: absolute;
     top: 0;
     right: 15px;
@@ -1117,7 +1121,11 @@ body, html {
 }
 
 /*Start all product*/
-#main #content .title-pro-all {
+#main #content1 {
+    margin-top: 88px;
+}
+
+#main #content1 .title-pro-all {
     padding-top: 16px;
     display: flex;
     justify-content: center;
@@ -1127,11 +1135,11 @@ body, html {
     margin-bottom: 35px;
 }
 
-#main #content .title-pro-all span {
+#main #content1 .title-pro-all span {
     font-style: italic;
 }
 
-#main #content .logo-lap{
+#main #content1 .logo-lap {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1141,7 +1149,7 @@ body, html {
 }
 
 
-#main #content .title-all-product-item {
+#main #content1 .title-all-product-item {
     display: block;
     text-align: center;
     margin: 8px 0;
@@ -1151,7 +1159,7 @@ body, html {
     padding-top: 32px;
 }
 
-#main #content .all-product-cover {
+#main #content1 .all-product-cover {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1161,7 +1169,7 @@ body, html {
     flex-wrap: wrap;
 }
 
-#main #content .all-product-item {
+#main #content1 .all-product-item {
     width: 178px;
     height: 312px;
     /*background-color: #1435c3;*/
@@ -1179,15 +1187,15 @@ body, html {
     border-radius: 10px;
 }
 
-#main #content .hover-all-product {
+#main #content1 .hover-all-product {
     margin: 0 8px;
 }
 
-#main #content .hover-all-product:hover {
+#main #content1 .hover-all-product:hover {
     transform: scale(1.05);
 }
 
-#main #content .img-all-product-item {
+#main #content1 .img-all-product-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1196,7 +1204,7 @@ body, html {
     height: fit-content;
 }
 
-#main #content .status {
+#main #content1 .status {
     float: left;
     background-color: #1435c3;
     color: white;
@@ -1208,7 +1216,7 @@ body, html {
     position: absolute;
 }
 
-#main #content .status-sale{
+#main #content1 .status-sale {
     width: 50px;
     height: 30px;
     background-color: #d42333;
@@ -1222,10 +1230,10 @@ body, html {
     color: white;
 }
 
-#main #content .infor-all-product-item {
+#main #content1 .infor-all-product-item {
     word-wrap: break-word;
     overflow: hidden;
-    -webkit-line-clamp: 2!important;
+    -webkit-line-clamp: 2 !important;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -1235,18 +1243,98 @@ body, html {
     /*height: 30px;*/
 }
 
-#main #content .price-all-product-item {
+#main #content1 .price-all-product-item {
     margin: 8px 0;
     font-weight: 800;
 }
 
-#main #content .sale-all-product-item {
+#main #content1 .sale-all-product-item {
     font-size: 12px;
     font-weight: 400;
 }
 
-#main #content .origin-price {
+#main #content1 .origin-price {
 
     text-decoration: line-through;
 }
+
+/*.dots-slick {*/
+/*    position: absolute;*/
+/*    bottom: -20px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    display: flex;*/
+/*}*/
+
+/*.dots-slick ul {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.dots-slick li {*/
+/*    margin: 0 4px;*/
+/*}*/
+
+
+/*.dots-slick button {*/
+/*    background: #1435c3;*/
+/*    height: 30px;*/
+/*    width: 30px;*/
+/*    overflow: hidden;*/
+/*    color: #1435c3;*/
+/*    border: none;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.dots-slick button:checked{*/
+/*    background: white;*/
+/*}*/
+/*.dots-slick button:focus{*/
+/*    background: white;*/
+/*}*/
+.dots-slick{
+    width: 100%;
+}
+
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+
+    list-style-type: none;
+}
+
+li {
+    margin: 0 0.25rem;
+}
+
+.dots-slick button {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: white;
+    /*text-indent: -9999px;*/
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background-color: #1435c3;
+    color: white;
+}
+
+
+/*.dots-slick button:focus{*/
+/*    background: white;*/
+/*}*/
+
+
 /*End all product*/

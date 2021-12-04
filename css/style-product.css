@@ -12,15 +12,8 @@ body, html {
     font-family: roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/*body {*/
-/*    font-size: 14px;*/
-/*    line-height: 1.42857143;*/
-/*    color: #333;*/
-/*    background-color: #fff;*/
-/*}*/
-
-.font-32 {
-    font-size: 32px;
+.font-14 {
+    font-size: 14px;
 }
 
 /*Start CSS header top*/
