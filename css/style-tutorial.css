@@ -387,7 +387,7 @@ body, html {
 /*Start CSS register*/
 #register-main .register {
     width: 432px;
-    height: 365px;
+    height: auto;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 10px 16px 24px 16px;
