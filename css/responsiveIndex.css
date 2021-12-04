@@ -119,7 +119,7 @@
         margin: 27px 0 27px 0;
     }
 
-    .slick-dots {
-        justify-content: flex-start;
-    }
+    /*.slick-dots {*/
+    /*    justify-content: flex-start;*/
+    /*}*/
 }
