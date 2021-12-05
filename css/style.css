@@ -503,22 +503,6 @@ body, html {
     transition: 0.3s;
 }
 
-#main #content .product .img-product-selling1 {
-    background-image: url("../image/img_16.png");
-}
-
-#main #content .product .img-product-selling2 {
-    background-image: url("../image/img_17.png");
-}
-
-#main #content .product .img-product-selling3 {
-    background-image: url("../image/img_18.png");
-}
-
-#main #content .product .img-product-selling4 {
-    background-image: url("../image/img_19.png");
-}
-
 #main #content .product .product-selling {
     border-radius: 0 0 0 10px;
     background-position: center;
@@ -535,7 +519,7 @@ body, html {
 
 
 #main #content .product .product-hover-selling:hover .product-selling {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 #main #content .product .product-hover-items:hover .img-product-item {
