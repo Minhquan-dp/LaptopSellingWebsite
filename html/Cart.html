@@ -13,11 +13,12 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
           integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
     <link href="../css/responsiveIndex.css" rel="stylesheet">
     <link href="../fonts/themify-icons/themify-icons.css" rel="stylesheet">
     <link href="../fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cartResponsive.css">
 </head>
 <body>
 <div id="cart-main">
@@ -96,7 +97,7 @@
                     <div id="your-cart">
                         <div class="container">
                             <div class="top-content">
-                                <div class="container">
+                                <div class="top-content-container">
                                     <div class="title">
                                     <span class="content">
                                         <span class="big-text bolder">Giỏ hàng của bạn</span>
@@ -117,7 +118,7 @@
                                 <div class="left-provider-content">
                                     <div class="provider-container">
                                         <div class="provider-padding provider-checkbox">
-                                            <input type="checkbox" id="" name="" value="">
+                                            <input type="checkbox" id="checkAllProduct" name="checkAllProduct" value="">
                                         </div>
                                         <div class="provider-padding-left provider-info">
                                             <div class="provider-icon">
@@ -133,39 +134,37 @@
                                     </div>
                                 </div>
                                 <div class="right-provider-content">
-                                    <div class="total-pay">
-                                        <span class="blue-text bolder"> XXX.XXX.XXXđ</span>
-                                    </div>
+                                        <span class="total-pay blue-text bolder"> 84000000<span>đ</span></span>
                                 </div>
                             </div>
                             <div id="cart-item-info">
                                 <div class="container">
                                     <div class="item">
-                                        <div class="item-checkbox item-padding">
-                                            <input type="checkbox" name="" value="">
-                                        </div>
-                                        <div class="item-thumbnail item-padding">
-                                            <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
-                                        </div>
-                                        <div class="item-info-container item-padding">
-                                            <div class="item-info-name">
-                                                <span class="smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
                                             </div>
-                                            <div class="item-info-sku">
-                                                <span class="smaller-text light-gray-text">SKU: 191100961</span>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
                                             </div>
                                         </div>
-                                        <div class="btn-add-subtract">
-                                            <button class="btn-padding btn-subtract">
-                                                <i class="icon-btn far fa-caret-square-down"></i>
-                                            </button>
-                                            <div class="btn-padding number">1</div>
-                                            <button class="btn-padding btn-add">
-                                                <i class="icon-btn far fa-caret-square-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="price">
-                                            <span class="bolder gray-text">4.300.000đ</span>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -174,36 +173,71 @@
                             <div id="cart-item-info">
                                 <div class="container">
                                     <div class="item">
-                                        <div class="item-checkbox item-padding">
-                                            <input type="checkbox" name="" value="">
-                                        </div>
-                                        <div class="item-thumbnail item-padding">
-                                            <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
-                                        </div>
-                                        <div class="item-info-container item-padding">
-                                            <div class="item-info-name">
-                                                <span class="smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
                                             </div>
-                                            <div class="item-info-sku">
-                                                <span class="smaller-text light-gray-text">SKU: 191100961</span>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
                                             </div>
                                         </div>
-                                        <div class="btn-add-subtract">
-                                            <button class="btn-padding btn-subtract">
-                                                <i class="icon-btn far fa-caret-square-down"></i>
-                                            </button>
-                                            <div class="btn-padding number">1</div>
-                                            <button class="btn-padding btn-add">
-                                                <i class="icon-btn far fa-caret-square-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="price">
-                                            <span class="bolder gray-text">4.300.000đ</span>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
+                            <div id="cart-item-info">
+                                <div class="container">
+                                    <div class="item">
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
+                                            </div>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
+                                            </div>
+                                        </div>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <div id="cart-item">
@@ -212,7 +246,7 @@
                                 <div class="left-provider-content">
                                     <div class="provider-container">
                                         <div class="provider-padding provider-checkbox">
-                                            <input type="checkbox" id="" name="" value="">
+                                            <input type="checkbox" id="checkAllProduct" name="checkAllProduct" value="">
                                         </div>
                                         <div class="provider-padding-left provider-info">
                                             <div class="provider-icon">
@@ -228,39 +262,37 @@
                                     </div>
                                 </div>
                                 <div class="right-provider-content">
-                                    <div class="total-pay">
-                                        <span class="blue-text bolder"> XXX.XXX.XXXđ</span>
-                                    </div>
+                                    <span class="total-pay blue-text bolder"> 84000000<span>đ</span></span>
                                 </div>
                             </div>
                             <div id="cart-item-info">
                                 <div class="container">
                                     <div class="item">
-                                        <div class="item-checkbox item-padding">
-                                            <input type="checkbox" name="" value="">
-                                        </div>
-                                        <div class="item-thumbnail item-padding">
-                                            <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
-                                        </div>
-                                        <div class="item-info-container item-padding">
-                                            <div class="item-info-name">
-                                                <span class="smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
                                             </div>
-                                            <div class="item-info-sku">
-                                                <span class="smaller-text light-gray-text">SKU: 191100961</span>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
                                             </div>
                                         </div>
-                                        <div class="btn-add-subtract">
-                                            <button class="btn-padding btn-subtract">
-                                                <i class="icon-btn far fa-caret-square-down"></i>
-                                            </button>
-                                            <div class="btn-padding number">1</div>
-                                            <button class="btn-padding btn-add">
-                                                <i class="icon-btn far fa-caret-square-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="price">
-                                            <span class="bolder gray-text">4.300.000đ</span>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -269,36 +301,71 @@
                             <div id="cart-item-info">
                                 <div class="container">
                                     <div class="item">
-                                        <div class="item-checkbox item-padding">
-                                            <input type="checkbox" name="" value="">
-                                        </div>
-                                        <div class="item-thumbnail item-padding">
-                                            <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
-                                        </div>
-                                        <div class="item-info-container item-padding">
-                                            <div class="item-info-name">
-                                                <span class="smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
                                             </div>
-                                            <div class="item-info-sku">
-                                                <span class="smaller-text light-gray-text">SKU: 191100961</span>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
                                             </div>
                                         </div>
-                                        <div class="btn-add-subtract">
-                                            <button class="btn-padding btn-subtract">
-                                                <i class="icon-btn far fa-caret-square-down"></i>
-                                            </button>
-                                            <div class="btn-padding number">1</div>
-                                            <button class="btn-padding btn-add">
-                                                <i class="icon-btn far fa-caret-square-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="price">
-                                            <span class="bolder gray-text">4.300.000đ</span>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
+                            <div id="cart-item-info">
+                                <div class="container">
+                                    <div class="item">
+                                        <div class="left-cart-item">
+                                            <div class="item-checkbox item-padding">
+                                                <input type="checkbox" id="checkItem" name="checkItem" value="">
+                                            </div>
+                                            <div class="item-thumbnail item-padding">
+                                                <img class="item-logo-thumbnail" src="../image/man-hinh-asus.jpg">
+                                            </div>
+                                            <div class="item-info-container item-padding">
+                                                <span class="item-info-name smaller-text">Màn hình LCD ASUS VL249HE (1920 x 1080/IPS/75Hz/5 ms)</span>
+                                                <span class=" item-info-sku smaller-text light-gray-text">SKU: 191100961</span>
+                                            </div>
+                                        </div>
+                                        <div class="right-cart-item">
+                                            <div class="btn-add-subtract">
+                                                <button class="btn-padding btn-subtract">
+                                                    <i class="icon-btn fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="btn-padding number">1</div>
+                                                <button class="btn-padding btn-add">
+                                                    <i class="icon-btn fas fa-chevron-up"></i>
+                                                </button>
+                                            </div>
+                                            <div class="price">
+                                                <span class="bolder gray-text price-text">4300000<span>đ</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -334,7 +401,8 @@
                                         </div>
                                         <div class="applied-coupon-right">
                                             <div class="returned-money">
-                                                <span class="blue-text">- 30.000đ</span>
+                                                <span>-</span>
+                                                <span class="blue-text">30000<span>đ</span></span>
                                             </div>
                                         </div>
                                     </div>
@@ -351,12 +419,21 @@
                                                     <span class="experied-day smaller-text">HSD:</span>
                                                     <span class="red-text smaller-text">đến 30/10/2021</span>
                                                 </div>
+                                                <div class="active-day padding-10">
+                                                    <span class="experied-day smaller-text">HSD:</span>
+                                                    <span class="red-text smaller-text">đến 30/10/2021</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="applied-coupon-right">
                                             <div class="returned-money">
                                                 <span class="blue-text">- 30.000đ</span>
                                             </div>
+                                        </div>
+                                        <div class="applied-coupon-right">
+                                            <span>-</span>
+                                            <span class="blue-text returned-money">30000<span>đ</span></span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -369,11 +446,11 @@
                                 </div>
                                 <div id="provisional-price" class="padding-10">
                                     <span class="left gray-text">Tạm tính</span>
-                                    <span class="right provisional-cash bolder">4.300.000đ</span>
+                                    <span class="right provisional-cash bolder">4300000<span>đ</span></span>
                                 </div>
                                 <div id="final-price" class="padding-10 padding-bottom-20">
                                     <span class="left gray-text">Thành tiền</span>
-                                    <span class="right final-cash large-text red-text bolder">4.300.000đ</span>
+                                    <span class="right final-cash large-text red-text bolder">4300000<span>đ</span></span>
                                 </div>
                                 <div id="VAT" class="padding-10">
                                     <span class="gray-text">(Đã bao gồm VAT)</span>
@@ -390,7 +467,6 @@
 
         </div>
     </div>
-
     <div id="footer">
         <div class="footer-main">
             <div class="footer-element">

@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -208,8 +209,11 @@ body, html {
     flex-direction: row;
     padding-bottom: 40px;
 }
+#cart-info .left-content {
+    width: 70%;
+}
 #cart-info .right-content {
-    width: 400px;
+    width: 30%;
     margin-top: 60px;
     margin-left: 15px;
 }
@@ -236,14 +240,13 @@ body, html {
 }
 #coupon .coupon-input-container .coupon-input{
     padding: 10px;
-    width: 250px;
     border: 1px solid lightgray;
     border-radius: 3px;
     -webkit-box-align: center;
+    width: 70%;
 }
 #coupon .coupon-input-container .confirm-btn{
     background-color: white;
-    width: 120px;
     border: 1px solid lightgray;
     padding: 10px;
     border-radius: 3px;
@@ -266,7 +269,7 @@ body, html {
     justify-content: space-between;
 }
 #list-applied-coupon .container .applied-coupon-left {
-    width: 250px;
+    width: 80%;
 }
 #list-applied-coupon .container .applied-coupon-right{
     right:0;
@@ -345,14 +348,14 @@ body, html {
     margin-bottom: 10px;
 }
 #your-cart .container {
+
+}
+#your-cart .container .top-content .top-content-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#your-cart .container .top-content .container {
-    width: 815px;
-}
-#your-cart .container .top-content .container .btn-clear .clear {
+#your-cart .container .top-content .top-content-container .btn-clear .clear {
     color: #1435c3;
     cursor: pointer;
     border: 1px solid #f8f8fc;
@@ -364,7 +367,6 @@ body, html {
     padding: 5px;
 }
 #cart-item {
-    width: 815px;
     margin-top: 20px;
     border: 1px solid white;
     border-radius: 7px;
@@ -414,7 +416,20 @@ body, html {
 #cart-item-info .container .item {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+#cart-item-info .container .item .left-cart-item {
+    display: flex;
+    flex-direction: row;
+
+}
+#cart-item-info .container .item .right-cart-item {
+    display: flex;
+    flex-direction: row;
+
+}
+#cart-item .right-provider-content{
+    display: flex;
 }
 #cart-item-info .item-checkbox{
     margin-top: 40px;
@@ -422,6 +437,11 @@ body, html {
 #cart-item-info .container .item .item-padding {
     padding: 10px;
 }
+#cart-item-info .container .item .item-info-container {
+    display: flex;
+    flex-direction: column ;
+}
+
 #cart-item-info .item-logo-thumbnail {
     width: 100px;
     height: 100px;
