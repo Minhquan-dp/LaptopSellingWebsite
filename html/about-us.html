@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Metaverse Laptop</title>
+    <link rel="icon" href="../image/logo-re.png">
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/responsiveIndex.css" rel="stylesheet">
+    <link href="../fonts/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="../fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
           integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -16,46 +21,118 @@
     <div id="header">
         <a href="index.html">
             <div class="header_logo">
-                <img src="../image/img_1.png" alt="" class="logo">
+                <!--                <img src="../image/img_1.png" alt="" class="logo">-->
             </div>
         </a>
         <form action="" class="header_search">
             <div class="search">
-                <input type="text" required placeholder="Nhập từ khóa cần tìm kiếm ..." class="header_input-search">
-                <button role="button" class="header_btn-search">
+                <input class="header_input-search" placeholder="Nhập từ khóa cần tìm kiếm" required type="text">
+                <button class="header_btn-search" role="button">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
         </form>
-        <div class="header_list">
+        <div class="header_list" id="header-list-id">
             <ul class="header_list-item">
                 <li class="header_sub-list">
-                    <a class="hover-header" href="">
-                        <i class="hover-header1 fas fa-percent"></i>Khuyến mãi
+                    <a class="font-14 hover-header" href="product-page.html">
+                        <i class="hover-header1 fas fa-percent"></i>Sản phẩm
                     </a>
                 </li>
                 <li class="header_sub-list">
-                    <a class="hover-header" href="">
-                        <i class="hover-header1 fas fa-clipboard-check"></i>Đơn hàng
+                    <a class="font-14 hover-header" href="tutorial-page.html">
+                        <i class="hover-header1 fas fa-clipboard-check"></i>Hướng dẫn
                     </a>
                 </li>
                 <li class="header_sub-list">
-                    <a class="hover-header" href="#">
-<!--                        <i class="hover-header1 fas fa-bell"></i>-->
+                    <a class="font-14 hover-header" href="about-us.html">
                         <i class="hover-header1 fas fa-users"></i>Thông tin
                     </a>
                 </li>
-                <li class="header_sub-list">
-                    <a class="hover-header" href="">
+                <li id="li-cart" class="header_sub-list">
+                    <a class="font-14 hover-header" href="Cart.html">
                         <i class="hover-header1 fas fa-shopping-cart"></i>Giỏ hàng
                     </a>
+                    <div id="icon-cart" class="icon-cart"></div>
                 </li>
                 <li class="header_sub-list">
-                    <a class="hover-header js-btn-login" role="button">
+                    <a class="font-14 hover-header js-btn-login" role="button">
                         <i class="hover-header1 fas fa-user"></i>Đăng nhập
                     </a>
                 </li>
             </ul>
+        </div>
+
+        <div class="menu-mobile-class" id="mobile-menu">
+            <i class="menu-mobile-btn ti-menu"></i>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
+
+    </div>
+
+    <div id="cart-hover" class="hover-cart">
+        <div class="cover-cart-item">
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img-cart-item" style="background-image: url(../image/image99.png)">
+
+                </div>
+                <div class="details-cart-item">
+                    <div class="infor-cart-item">Màn hình LCD VIEWSONIC VP2458 (1920 x 1080/IPS/60Hz/5 ms)</div>
+                    <div class="num-cart-item">Số lượng: 2</div>
+                    <div class="price-cart-item">5.620.000đ</div>
+                </div>
+            </div>
+        </div>
+        <div class="total-cart">
+            <div class="total-price-infor">
+                <div class="total-product">Tổng tiền (2) sản phẩm</div>
+                <div class="total-price">11.240.000đ</div>
+            </div>
+            <div role="button" class="btn-view-cart"><a href="Cart.html" class="btn-tt">Xem giỏ hàng</a></div>
         </div>
     </div>
     <div id="content">
@@ -176,27 +253,40 @@
         </div>
     </div>
 </div>
-<div id="register-main" class="js-register">
+<div class="js-register" id="register-main">
     <div class="register js-register-container">
         <div class="title-register">
-            <a role="button" class="close-register js-close-icon"><i class="fas fa-times"></i></a>
-            <h1 class="title-register-main">Đăng kí</h1>
+            <a class="close-register js-close-icon" role="button"><i class="fas fa-times"></i></a>
+            <h1 class="title-register-main" style="margin: 0; line-height: 1.4;">Đăng kí</h1>
             <p class="slogan-register">Nhanh chóng và dễ dàng</p>
         </div>
         <div class="border"></div>
         <form action="" class="register-form">
             <div class="input-register">
-                <input type="text" required placeholder="Họ" class="input-item-haft left">
-                <input type="text" required placeholder="Tên" class="input-item-haft right">
-                <input type="text" required placeholder="Tên đăng nhập" class="input-items">
-                <input type="password" required placeholder="Mật khẩu mới" class="input-items">
+                <input class="input-item-haft left" placeholder="Họ" required type="text">
+                <input class="input-item-haft right" placeholder="Tên" required type="text">
+                <input class="input-items" placeholder="Tên đăng nhập" required type="text">
+                <input class="input-items" placeholder="Mật khẩu mới" required type="password">
+                <input class="input-items" placeholder="Địa chỉ nhận hàng" required type="password">
             </div>
             <div class="register-div">
-                <a role="button" class="btn-register">Đăng kí</a>
+                <a class="btn-register" role="button">Đăng kí</a>
             </div>
         </form>
     </div>
 </div>
+<!--Back to top-->
+<button id="myBtn">&#8593;</button>
 </body>
 <script src="../js/register.js"></script>
+<script crossorigin="anonymous" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../js/nav-responsive.js"></script>
+<script src="../js/BackToTop.js"></script>
+<script src="../js/Scroll-Indicator.js"></script>
+<script src="../js/visibleCart.js"></script>
 </html>

@@ -9,17 +9,11 @@ body, html {
     background-color: rgba(204, 204, 202, 0.3);
     /*overflow-y: scroll;*/
     scroll-behavior: smooth;
-    font-family: roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-body{
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+    font-family: roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-32 {
-    font-size: 32px;
+.font-14 {
+    font-size: 14px;
 }
 
 /*Start CSS header top*/
@@ -34,7 +28,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #header .header_logo {
@@ -43,6 +37,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../image/logo.png");
 }
 
 #header .header_logo .logo {
@@ -74,6 +72,8 @@ body{
     border-radius: 5px;
     color: #fff;
     background-color: #1435c3;
+    cursor:  pointer;
+    border: none;
 }
 
 #header .header_search .search {
@@ -82,6 +82,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#header .menu-mobile-class {
+    display: none;
 }
 
 #header .header_list {
@@ -130,12 +134,24 @@ body{
 /*    color: #ffffff;*/
 /*}*/
 #header .header_list .header_sub-list:hover::before {
+    color: #ffffff;
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#header .header_list .header_sub-list:hover i {
+    color: #ffffff;
+}
+#header .header_list .header_sub-list:hover a {
+    color: #ffffff;
 }
 
 #header .header_list .header_sub-list:hover .hover-header {
     color: #ffffff;
     cursor: pointer;
+}
+
+#header .header_list .header_sub-list .hover-header1 {
+    font-size: 32px;
 }
 
 
@@ -150,35 +166,55 @@ body{
     text-decoration: none;
     color: #ccc;
 }
+
 /*End CSS header top*/
-/*#container{*/
-/*    width: auto;*/
-/*}*/
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
+
+/*Start content*/
+#main-tutorial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
-#main-tutorial #container {
-    background-position: center;
+#container {
+    width: 60%;
+    height: auto;
+    margin-top: 100px;
+    /*padding: 12px 50px 12px 50px;*/
+    display: flex;
+    align-content: center;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    /*background-color: white;*/
+}
+
+#main-tutorial #container .step {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+#main-tutorial .img-tutorial {
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 45%;
+    margin-bottom: 16px;
 }
-#main-tutorial #container .container-fluid{
-    padding-top: 50px;
+
+#main-tutorial .content-tutorial {
+    margin-bottom: 12px;
 }
-#main-tutorial #container .container-fluid .news-article{
-    text-align: left;
-}
-#main-tutorial #container .container-fluid .news1-article{
+
+#main-tutorial #container .title-tutorial {
+    width: 100%;
     text-align: center;
-    color: red;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 42px;
 }
-#main-tutorial #container .container-fluid .news2-article{
-    text-align: left;
-    color: red;
-    font-size: 20px;
-}
+/*End content*/
 /*Start CSS footer*/
 #footer {
     /*width: 100%;*/
@@ -351,7 +387,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*Start CSS register*/
 #register-main .register {
     width: 432px;
-    height: 365px;
+    height: auto;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 10px 16px 24px 16px;
@@ -412,3 +448,159 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*End CSS register*/
+
+/*Scroll Indicator*/
+.progress-container{
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: absolute;
+    bottom: -8px;
+}
+.progress-bar{
+    height: 8px;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
+    width: 0%;
+    transition: width 0.2s ease-out;
+}
+
+/*Back to top*/
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#myBtn:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.hover-cart {
+    z-index: 1000;
+    position: fixed;
+    width: 385px;
+    height: auto;
+    background-color: white;
+    right: 125px;
+    word-wrap: break-word;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    top: 79px;
+    display: none;
+    /* justify-content: center; */
+    /* bottom: 0; */
+}
+
+.hover-cart .cover-cart-item {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    height: 250px;
+}
+
+.hover-cart .cart-item {
+    display: flex;
+    margin-top: 4px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.hover-cart .img-cart-item {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hover-cart .details-cart-item {
+    height: 80px;
+    width: 256px;
+    margin-left: 12px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.hover-cart .infor-cart-item {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px 0 4px 0;
+}
+
+.hover-cart .num-cart-item {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.3;
+    margin: 4px 0 4px 0;
+}
+
+.hover-cart .price-cart-item {
+    font-weight: 700;
+    margin: 4px 0 4px 0;
+}
+
+.hover-cart .total-cart {
+    height: auto;
+    /*background-color: #1435c3;*/
+    width: 100%;
+    padding: 8px;
+}
+
+.hover-cart .total-price-infor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.hover-cart .total-price {
+    font-weight: 800;
+    color: crimson;
+}
+.hover-cart .btn-view-cart {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.hover-cart .btn-view-cart a {
+    background-color: #1435c3;
+    padding: 10px 127px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.icon-cart {
+    width: 25px;
+    height: 25px;
+    background-color:  #ff4d4d;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 2px;
+}
