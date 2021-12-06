@@ -1,21 +1,25 @@
 let allItems = document.querySelectorAll('.hover-all-product');
 let countAllProduct = 0;
-let test = document.querySelectorAll('.dots-slick button')
-console.log(test)
+// let test = document.querySelectorAll('.dots-slick button')
+// console.log(test)
 for (let i = 0; i < allItems.length; i++) {
     countAllProduct++;
 }
-if (countAllProduct <= 24) {
+if (countAllProduct <= 30) {
     $('.all-product-cover').slick('unslick');
 } else {
+    for (let i = 0; i < allItems.length; i++) {
+        allItems[i].style.maxWidth = 'inherit'
+    }
     $('.all-product-cover').slick({
         dots: true,
         infinite: false,
         speed: 1000,
         slidesToShow: 6,
         slidesToScroll: 6,
-        rows: 4,
+        rows: 6,
         arrows : false,
+        // variableWidth: true,
         appendDots: $('.dots-slick'),
         responsive: [
             {
