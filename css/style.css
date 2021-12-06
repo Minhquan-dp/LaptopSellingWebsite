@@ -1170,9 +1170,16 @@ body, html {
     align-content: center;
     justify-content: flex-start;
     height: auto;
-    padding: 16px  18px;
+    padding: 16px 18px;
     border-radius: 10px 10px 0 0;
     /*border-bottom: 1px solid #cccccc;*/
+}
+
+#main #content1 .price-filter {
+    display: flex;
+    align-content: center;
+    align-content: center;
+    justify-content: center;
 }
 
 #main #content1 .btn-search-filter {
@@ -1188,7 +1195,7 @@ body, html {
     display: none;
 }
 
-#main #content1 .input-filter-product{
+#main #content1 .input-filter-product {
     border: none;
     outline: none;
     height: auto;
@@ -1200,7 +1207,7 @@ body, html {
     align-content: center;
     justify-content: flex-start;
     height: auto;
-    padding: 0  18px;
+    padding: 0 18px;
     margin: 8px 0;
 }
 
@@ -1252,8 +1259,8 @@ body, html {
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
-.filter-class-add{
-    border: 1px solid rgb(20, 53, 195)!important;
+.filter-class-add {
+    border: 1px solid rgb(20, 53, 195) !important;
 }
 
 #main #content1 .tick {
@@ -1269,6 +1276,7 @@ body, html {
     border-width: 0px 20px 20px 0px;
     border-color: transparent rgb(20, 53, 195) transparent transparent;
 }
+
 #main #content1 .tick-another {
     display: none;
     font-size: 10px;
@@ -1292,7 +1300,7 @@ body, html {
     /*max-width: inherit;*/
 }
 
-#main #content1 .hover-all-product:hover .img-all-product-item{
+#main #content1 .hover-all-product:hover .img-all-product-item {
     transform: scale(1.1);
 }
 
@@ -1438,6 +1446,7 @@ li.slick-active button {
 .slick-slide {
     box-sizing: border-box;
 }
+
 /*.dots-slick button:focus{*/
 /*    background: white;*/
 /*}*/

@@ -122,7 +122,25 @@
     #main #content .product .product-biggest {
         width: 100%;
     }
+    #main #content1 .all-product-cover {
+        flex-direction: column;
+    }
 
+    #main #content1 .hover-all-product{
+        max-width: inherit;
+    }
+
+    #main #content1 .filter-items {
+        flex: 2;
+    }
+
+    #main #content1 .filter-item-another{
+        margin: 4px 8px;
+    }
+
+    #main #content1 .price-filter {
+        flex-direction: column;
+    }
     /*.slick-dots {*/
     /*    justify-content: flex-start;*/
     /*}*/
