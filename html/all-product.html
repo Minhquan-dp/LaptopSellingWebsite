@@ -275,12 +275,14 @@
                 <div class="filter-item-another">Giá tăng dần
                     <div class="tick tick-another"><i class="fas fa-check" style="position: absolute;  left: 7px"></i></div>
                 </div>
+                <div class="price-filter">
                 <div class="filter-item-another" style="cursor: auto">
                     <input class="input-filter-product" placeholder="Giá thấp nhất">
                 </div>
-                <p>-</p>
+                    <span style="line-height: 2; text-align: center">-</span>
                 <div class="filter-item-another" style="cursor: auto">
                     <input class="input-filter-product" placeholder="Giá cao nhất">
+                </div>
                 </div>
                 <button class="btn-search-filter">Tìm</button>
 
@@ -780,7 +782,7 @@
         </div>
     </div>
 </div>
-<div class="js-login" id="login-main">
+<div class="js-login" id="login-main" style="z-index: 10">
     <div class="login js-login-container">
         <div class="title-login">
             <a class="close-login" role="button"></a>
@@ -804,7 +806,7 @@
         </div>
     </div>
 </div>
-<div class="js-forgot" id="forgot-main">
+<div class="js-forgot" id="forgot-main" style="z-index: 10">
     <div class="forgot js-forgot-container">
         <div class="title-forgot">
             <a class="close-forgot" role="button"></a>
@@ -825,7 +827,7 @@
         </div>
     </div>
 </div>
-<div class="js-register" id="register-main">
+<div class="js-register" id="register-main" style="z-index: 10">
     <div class="register js-register-container">
         <div class="title-register">
             <a class="close-register js-close-icon" role="button"><i class="fas fa-times"></i></a>
@@ -835,8 +837,7 @@
         <div class="border"></div>
         <form action="" class="register-form">
             <div class="input-register">
-                <input class="input-item-haft left" placeholder="Họ" required type="text">
-                <input class="input-item-haft right" placeholder="Tên" required type="text">
+                <input class="input-items" placeholder="Họ và tên" required type="text">
                 <input class="input-items" placeholder="Tên đăng nhập" required type="text">
                 <input class="input-items" placeholder="Mật khẩu mới" required type="password">
                 <input class="input-items" placeholder="Địa chỉ nhận hàng" required type="password">
@@ -862,6 +863,6 @@
 <script src="../js/BackToTop.js"></script>
 <script src="../js/Scroll-Indicator.js"></script>
 <script src="../js/visibleCart.js"></script>
-<!--<script src="../js/slick-all-product.js"></script>-->
+<script src="../js/slick-all-product.js"></script>
 <script src="../js/click-filter.js"></script>
 </html>
