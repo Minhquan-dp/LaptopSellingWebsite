@@ -1065,6 +1065,8 @@ body, html {
 /*Start all product*/
 #main #content1 {
     margin-top: 88px;
+    /*padding: 8px;*/
+    background: #f8f8fc;
 }
 
 #main #content1 .title-pro-all {
@@ -1103,22 +1105,34 @@ body, html {
 
 #main #content1 .all-product-cover {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     flex-wrap: wrap;
+    background: #f8f8fc;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+#main #content1 .cover-all-product {
+    /*background: white;*/
+    /*padding: 1px 0;*/
+    width: 100%;
+    border-radius: 10px;
+    /* display: table-header-group; */
 }
 
 #main #content1 .all-product-item {
-    width: 178px;
+    flex: 1;
+    /* width: 200px; */
     height: 312px;
-    /*background-color: #1435c3;*/
-    margin: 16px auto 16px auto;
+    /* background-color: #1435c3; */
+    margin: 4px;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    /* align-items: center; */
     align-content: center;
     flex-direction: column;
     position: relative;
@@ -1127,24 +1141,170 @@ body, html {
     background-color: white;
     padding: 8px;
     border-radius: 10px;
+    min-width: 15%;
+    max-width: 100%;
 }
+
+#main #content1 .filter-product {
+    width: 100%;
+    height: auto;
+    background: white;
+    /*height: 100px;*/
+    border-radius: 10px;
+    display: inline-block;
+    /*margin: 8px 8px 16px 8px;*/
+    margin-bottom: 16px;
+    /*flex-wrap: wrap;*/
+}
+
+#main #content1 .title-filter-product {
+    /*width: 100%;*/
+    height: auto;
+    padding: 16px 16px 16px 8px;
+}
+
+#main #content1 .filter-another {
+    background: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 16px  18px;
+    border-radius: 10px 10px 0 0;
+    /*border-bottom: 1px solid #cccccc;*/
+}
+
+#main #content1 .btn-search-filter {
+    padding: 8px 16px;
+    color: white;
+    background: #1435c3;
+    box-shadow: 0 0 10px #1435c3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 32px;
+    display: none;
+}
+
+#main #content1 .input-filter-product{
+    border: none;
+    outline: none;
+    height: auto;
+}
+
+#main #content1 .filter {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0  18px;
+    margin: 8px 0;
+}
+
+#main #content1 .title-filter {
+    flex: 1;
+    margin-right: 32px;
+    /*width: 150px;*/
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#main #content1 .filter-items {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex: 8;
+}
+
+#main #content1 .filter-item {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 15px 0 15px 0;
+    border: 1px solid #e0e0e0;
+    margin: 4px 8px;
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+#main #content1 .filter-item-another {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 15px 0 15px 0;
+    border: 1px solid #e0e0e0;
+    margin: 0 8px;
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.filter-class-add{
+    border: 1px solid rgb(20, 53, 195)!important;
+}
+
+#main #content1 .tick {
+    display: none;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 20px 20px 0px;
+    border-color: transparent rgb(20, 53, 195) transparent transparent;
+}
+#main #content1 .tick-another {
+    display: none;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 20px 20px 0px;
+    border-color: transparent rgb(20, 53, 195) transparent transparent;
+}
+
 
 #main #content1 .hover-all-product {
-    margin: 0 8px;
+    /*margin: 0 8px;*/
+    flex: 1;
+    min-width: 15%;
+    max-width: 20%;
+    /*max-width: inherit;*/
 }
 
-#main #content1 .hover-all-product:hover {
-    transform: scale(1.05);
+#main #content1 .hover-all-product:hover .img-all-product-item{
+    transform: scale(1.1);
 }
 
 #main #content1 .img-all-product-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    padding-bottom: 100%;
     width: 100%;
-    height: fit-content;
+    height: 60%;
+    transition: 0.3s;
 }
+
 
 #main #content1 .status {
     float: left;
@@ -1153,14 +1313,15 @@ body, html {
     padding: 8px;
     width: fit-content;
     font-size: 12px;
-    bottom: 127px;
+    bottom: 120px;
     left: 0;
     position: absolute;
 }
 
 #main #content1 .status-sale {
-    width: 50px;
-    height: 30px;
+    padding: 5px;
+    width: fit-content;
+    height: auto;
     background-color: #d42333;
     display: flex;
     align-content: center;
@@ -1170,6 +1331,7 @@ body, html {
     position: absolute;
     top: 0;
     color: white;
+    z-index: 2;
 }
 
 #main #content1 .infor-all-product-item {
@@ -1236,7 +1398,7 @@ body, html {
 /*.dots-slick button:focus{*/
 /*    background: white;*/
 /*}*/
-.dots-slick{
+.dots-slick {
     width: 100%;
 }
 
@@ -1273,7 +1435,9 @@ li.slick-active button {
     color: white;
 }
 
-
+.slick-slide {
+    box-sizing: border-box;
+}
 /*.dots-slick button:focus{*/
 /*    background: white;*/
 /*}*/
