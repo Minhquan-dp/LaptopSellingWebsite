@@ -173,31 +173,31 @@ body, html {
 }
 
 /*End CSS header top*/
-#cart {
+.cart {
     margin: 80px 0 0 0;
     width: 100%;
     background-color: #f8f8fc;
 }
 
 
-#cart .padding {
+.cart .padding {
     padding: 0 60px;
 }
-#cart .padding-top-60 {
+.cart .padding-top-60 {
     padding-top: 60px;
 }
 
-#cart .container .address-menu .sub-container {
+.cart .container .address-menu .sub-container {
     display: flex;
     flex-direction: row;
 }
-#cart .container .address-menu .sub-container .arrow {
+.cart .container .address-menu .sub-container .arrow {
     margin: 0 10px;
 }
-#cart .container .address-menu {
+.cart .container .address-menu {
     margin-bottom: 20px;
 }
-#cart .container .address-menu .sub-container .current-btn .rounded-border{
+.cart .container .address-menu .sub-container .current-btn .rounded-border{
     border: 1px solid lightgray;
     padding: 7px;
     background-color: white;
@@ -318,15 +318,16 @@ body, html {
     float: right;
 }
 .cash .container .final-price {
-    margin-top: 10px;
+    margin: 10px 0;
+}
+.buy {
+    margin-top: 50px;
 }
 .VAT {
     display: flex;
     justify-content: flex-end;
 }
-.buy {
-    margin-top: 10px;
-}
+
 .buy .buy-btn {
     width: 100%;
     height: 40px;
