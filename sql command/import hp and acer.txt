@@ -1,6 +1,6 @@
 
 insert into thongtinlaptop values ('AN515-52-51LW', 'Laptop Acer Nitro 5', 'Acer', '24040000', 'Nitro', N'Đen', 'Intel Core i5-8300H',
- 'NVIDIA GeForce GTX 1050Ti 4GB', '8GB', '15.6"', '128GB SSD M.2 SATA / 1TB HDD 5400RPM', N'không đèn', N'4 cell 48 Wh Pin liền', '2.4 kg')
+ 'NVIDIA GeForce GTX 1050Ti 4GB', '8GB', '15.6"', '128GB SSD M.2 SATA / 1TB HDD 5400RPM', N'không đèn', N'4 cell 48 Wh Pin liền', '2.4 kg','../image/acer/','','','','')
 
 insert into thongtinlaptop values ('A515-53G-5788 NX.GZRSV.002', 'Laptop Acer Spin 3', 'Acer', '16400000', 'Spin ', N'Xám', 'Intel Core i5-8250U',
  'Intel UHD Graphics 620', '4GB', '14"', '256GB SSD M.2 SATA', N'không đèn', N'3 cell 61 Wh , Pin liền', '1.7 kg')
