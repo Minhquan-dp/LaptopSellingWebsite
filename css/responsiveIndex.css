@@ -75,13 +75,25 @@
     #header .header_list {
         display: flex;
         position: absolute;
-        bottom: -75px;
+        bottom: -82px;
         display: none;
         background: #fff;
         width: 100%;
     }
     #header .header_list .header_sub-list {
         width: 80px;
+    }
+
+    #header .header_list .header_sub-list a {
+        font-size: 12px;
+    }
+
+    #main #content .product .view-all {
+        margin: auto 16px;
+    }
+
+    #container {
+        width: 90%;
     }
 
     #header .menu-mobile-class {
