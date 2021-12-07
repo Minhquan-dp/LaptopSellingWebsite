@@ -4,7 +4,6 @@
         float: left;
     }
     #product-page #content-product .sale-policy{
-        /*padding: 10px 50px 10px 50px;*/
         width: 50%;
         float: right;
     }
@@ -12,10 +11,9 @@
 @media (max-width: 740px) {
         #product-page {
           margin: auto;
-            /*padding: initial;*/
         }
     #product-page #content-product{
-        /*margin: 0;*/
+        margin: 0;
     }
     #product-page #content-product .infor-product{
         margin: 20px 0 20px 0;
