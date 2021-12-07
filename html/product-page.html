@@ -26,7 +26,7 @@
 <body>
 
 <div id="header">
-    <a href="index.html">
+    <a href="../index.html">
         <div class="header_logo">
             <!--                <img src="../image/img_1.png" alt="" class="logo">-->
         </div>
@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li id="li-cart" class="header_sub-list">
-                <a class="font-14 hover-header" href="Cart.html">
+                <a class="font-14 hover-header" href="cart.html">
                     <i class="hover-header1 fas fa-shopping-cart"></i>Giỏ hàng
                 </a>
                 <div id="icon-cart" class="icon-cart"></div>
@@ -121,7 +121,7 @@
 <!--            <div class="total-product">Tổng tiền (2) sản phẩm</div>-->
             <div class="total-price"></div>
         </div>
-        <div role="button" class="btn-view-cart"><a href="Cart.html" class="btn-tt">Xem giỏ hàng</a></div>
+        <div role="button" class="btn-view-cart"><a href="cart.html" class="btn-tt">Xem giỏ hàng</a></div>
     </div>
 </div>
 <div id="product-page">
@@ -162,8 +162,8 @@
                 </div>
                 <div class="border-pro"></div>
                 <div class="btn-pro">
-                    <div class="mua-ngay"><a href="" class="btn-mua">MUA NGAY</a> </div>
-                    <div class="them-vao-gio"><a  id="them-vao-gio"  class="btn-mua">THÊM VÀO GIỎ HÀNG</a></div>
+                    <div class="mua-ngay"><a href="" class="btn-mua ripple">MUA NGAY</a> </div>
+                    <div class="them-vao-gio"><a role="button" id="them-vao-gio"  class="btn-mua ripple">THÊM VÀO GIỎ HÀNG</a></div>
                 </div>
             </div>
 
@@ -447,11 +447,11 @@
         </div>
     </div>
 </div>
-<div class="js-login" id="login-main">
+<div class="js-login" id="login-main" style="z-index: 10">
     <div class="login js-login-container">
         <div class="title-login">
             <a class="close-login" role="button"></a>
-            <h1 class="title-login-main" style="margin: 0; line-height: 1.4;">Đăng nhập</h1>
+            <h1 class="title-login-main">Đăng nhập</h1>
             <p class="slogan-login">Hãy tham gia cùng chúng tôi</p>
         </div>
         <div class="border"></div>
@@ -471,11 +471,11 @@
         </div>
     </div>
 </div>
-<div class="js-forgot" id="forgot-main">
+<div class="js-forgot" id="forgot-main" style="z-index: 10">
     <div class="forgot js-forgot-container">
         <div class="title-forgot">
             <a class="close-forgot" role="button"></a>
-            <h1 class="title-forgot-main" style="margin: 0; line-height: 1.4;">Quên mật khẩu</h1>
+            <h1 class="title-forgot-main">Quên mật khẩu</h1>
             <p class="slogan-forgot">Chúng tôi sẽ hỗ trợ tận tình</p>
         </div>
         <div class="border"></div>
@@ -492,7 +492,7 @@
         </div>
     </div>
 </div>
-<div class="js-register" id="register-main">
+<div class="js-register" id="register-main" style="z-index: 10">
     <div class="register js-register-container">
         <div class="title-register">
             <a class="close-register js-close-icon" role="button"><i class="fas fa-times"></i></a>
@@ -502,8 +502,7 @@
         <div class="border"></div>
         <form action="" class="register-form">
             <div class="input-register">
-                <input class="input-item-haft left" placeholder="Họ" required type="text">
-                <input class="input-item-haft right" placeholder="Tên" required type="text">
+                <input class="input-items" placeholder="Họ và tên" required type="text">
                 <input class="input-items" placeholder="Tên đăng nhập" required type="text">
                 <input class="input-items" placeholder="Mật khẩu mới" required type="password">
                 <input class="input-items" placeholder="Địa chỉ nhận hàng" required type="password">
@@ -526,12 +525,13 @@
         referrerpolicy="no-referrer"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <!--<script src="../js/slider.js"></script>-->
+<script src="../js/CartAtHover.js"></script>
+<script src="../js/ripple-button.js"></script>
 <script src="../js/product-bestseller.js"></script>
 <script src="../js/nav-responsive.js"></script>
 <script src="../js/BackToTop.js"></script>
 <script src="../js/Scroll-Indicator.js"></script>
 <script src="../js/visibleCart.js"></script>
 <script src="../js/clickAddCart.js"></script>
-<script src="../js/CartAtHover.js"></script>
 <script src="../js/hover-product.js"></script>
 </html>
