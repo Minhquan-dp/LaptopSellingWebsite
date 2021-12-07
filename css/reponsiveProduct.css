@@ -12,6 +12,10 @@
         #product-page {
           margin: auto;
         }
+
+    #product-page #container {
+        margin: auto;
+    }
     #product-page #content-product{
         margin: 0;
     }

@@ -216,7 +216,7 @@ body, html {
 }
 
 #product-page .table-specs tr:nth-child(even) {
-    background-color: rgba(242, 242, 242, 0.5);
+    background-color: rgba(242,242,242,0.5);
 }
 
 #product-page .table-specs tr:hover {
@@ -729,11 +729,11 @@ body, html {
     /*padding-bottom: 32px;*/
 }
 
-#product-page .infor-product .product-sale {
+#product-page .infor-product .product-sale{
     padding: 0 8px 0 8px;
 }
 
-#product-page .infor-product .product-sale .price-product {
+#product-page .infor-product .product-sale .price-product{
     margin: 32px 0 32px 0;
     font-size: 20px;
     line-height: 28px;
@@ -741,11 +741,11 @@ body, html {
     color: rgb(20, 53, 195);
 }
 
-.BOXKHUYENMAILIENQUAN ul {
+.BOXKHUYENMAILIENQUAN ul{
     padding-left: 2rem;
 }
 
-.BOXKHUYENMAILIENQUAN li {
+.BOXKHUYENMAILIENQUAN li{
     margin-bottom: 8px;
 }
 
@@ -801,7 +801,7 @@ body, html {
     margin: 0 8px 0 8px;
 }
 
-#product-page .mua-ngay a {
+#product-page .mua-ngay a{
     color: white;
 }
 
@@ -854,7 +854,6 @@ body, html {
     margin-top: 88px;
     background-color: #e5e5e3;
     /*margin-bottom: 24px;*/
-    position: relative;
 }
 
 #product-page .product {
@@ -1169,13 +1168,13 @@ body, html {
     align-items: center;
 }
 
-#product-page .bestseller .product-bestseller-items {
-    width: 249px;
-    height: 337px;
-    padding: 16px;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
+/*#product-page .bestseller .product-bestseller-items {*/
+/*    width: 249px;*/
+/*    height: 337px;*/
+/*    padding: 16px;*/
+/*    background-color: #ffffff;*/
+/*    border-radius: 5px;*/
+/*}*/
 
 #product-page .product-bestseller .img-product-sell1 {
     background-image: url("../image/img_11.png");
@@ -1198,7 +1197,7 @@ body, html {
 }
 
 #product-page .product-bestseller .img-product-bestseller {
-    width: 217px;
+    /*width: 217px;*/
     height: 217px;
     /*margin: auto;*/
     transition: 0.3s;
@@ -1396,7 +1395,6 @@ body, html {
     font-weight: 800;
     color: crimson;
 }
-
 .hover-cart .total-cart {
     height: auto;
     /*background-color: #1435c3;*/
@@ -1427,7 +1425,7 @@ body, html {
 .icon-cart {
     width: 25px;
     height: 25px;
-    background-color: #ff4d4d;
+    background-color:  #ff4d4d;
     position: absolute;
     top: 0;
     right: 15px;
@@ -1483,16 +1481,6 @@ span.ripple {
     }
 }
 
-#product-page .sale-policy .img-sale-policy {
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    /*line-height: normal;*/
-    margin-right: 3px;
-    box-sizing: border-box;
-}
 
 #view-image-product {
     background: white;
