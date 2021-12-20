@@ -15,8 +15,14 @@
 </head>
 <body>
 <div id="main">
+    <h1 class="title"><strong>DASHBOARD</strong></h1>
     <div class="container">
-        <div class="details-laptop">
+        <div class="tab">
+            <button class="tablinks active">DELL</button>
+            <button class="tablinks">MSI</button>
+            <button class="tablinks">ASUS</button>
+        </div>
+        <div id="dell" class="details-laptop">
             <a role="button" type="button" href="#table2">
                 <div class="logo" style="background-image: url('../image/logo lap/dell.png')"></div>
             </a>
@@ -33,7 +39,7 @@
                 <div class="details-title">Tổng số lượng tồn kho</div>
             </div>
         </div>
-        <div class="details-laptop">
+        <div id="msi" class="details-laptop">
             <a role="button" type="button" >
                 <div class="logo" style="background-image: url('../image/logo lap/msi.png')"></div>
             </a>
@@ -50,7 +56,7 @@
                 <div class="details-title">Tổng số lượng tồn kho</div>
             </div>
         </div>
-        <div class="details-laptop">
+        <div id="asus" class="details-laptop">
             <a role="button" type="button">
                 <div class="logo" style="background-image: url('../image/logo lap/asus.png')"></div>
             </a>
@@ -337,7 +343,12 @@
         </div>
     </div>
     <div class="container">
-        <div class="table-responsive">
+<!--        <div class="tab">-->
+<!--            <button class="tablink active">DELL</button>-->
+<!--            <button class="tablink">MSI</button>-->
+<!--            <button class="tablink">ASUS</button>-->
+<!--        </div>-->
+        <div id="table-dell" class="table-responsive table-tabs">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
@@ -476,4 +487,6 @@
     example8.init();
 </script>
 <script src="../js/BackToTop.js"></script>
+<script src="../js/tabs.js"></script>
+<!--<script src="../js/tabs-table.js"></script>-->
 </html>

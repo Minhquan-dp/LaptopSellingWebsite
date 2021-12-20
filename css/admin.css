@@ -17,6 +17,13 @@ body, html {
     flex-wrap: wrap;
     width: 100%;
 }
+
+.title{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
 .container {
     width: inherit;
     height: auto;
@@ -25,7 +32,9 @@ body, html {
     margin: 32px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
     display: inline-grid;
+    overflow: auto;
 }
+
 
 .input-sm {
     width: fit-content;
@@ -68,6 +77,11 @@ body, html {
 .table-responsive {
     margin: 30px 0;
 }
+
+/*.table-tabs{*/
+/*    display: none;*/
+/*}*/
+
 .table-wrapper {
     width: fit-content;
     /*min-width: 1000px;*/
@@ -284,11 +298,42 @@ table.table .avatar {
 }
 
 #main .container .details-laptop {
-    display: flex;
+    /*display: flex;*/
+    display: none;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 16px 0;
+    margin: 25px 0;
+}
+
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+    overflow: auto;
+    border-bottom: 1px solid #cccccc;
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f1f1f1;*/
+}
+
+/* định dạng các button tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* đổi màu khi một button tab được hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+div.tab button.active {
+    background-color: #ccc;
 }
 
 #main .details-laptop .logo{
