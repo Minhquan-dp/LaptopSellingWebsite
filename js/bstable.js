@@ -179,12 +179,22 @@ class BSTable {
     });
     this._actionsModeEdit(button);
   }
-  _rowDelete(button) {                        
-  // Remove the row
+  _rowDelete(button) {
+    let thongbao = document.getElementById('thongbao');
+    let btnYes = document.getElementById('yes');
+    let btnNo = document.getElementById('no');
     let $currentRow = $(button).parents('tr');       // access the row
     this.options.onBeforeDelete($currentRow);
-    $currentRow.remove();
-    this.options.onDelete();
+    thongbao.style.display = 'flex';
+    btnYes.addEventListener('click', function () {
+      // Remove the row
+      thongbao.style.display = 'none';
+      $currentRow.remove();
+      this.options.onDelete();
+    });
+    btnNo.addEventListener('click', function () {
+      thongbao.style.display = 'none';
+    })
   }
   _rowAccept(button) {
   // Accept the changes to the row
