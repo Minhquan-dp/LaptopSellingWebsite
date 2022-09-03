@@ -20,13 +20,6 @@ function viewImageProduct() {
             }
             bigImage.style.backgroundImage = itemImage[i].style.backgroundImage;
         })
-        // itemImage[i].addEventListener("mouseover", function () {
-        //     itemImage[i].style.opacity = '1';
-        //     // productImage.style.backgroundImage = imageItems[i].style.backgroundImage;
-        // })
-        // itemImage[i].addEventListener("mouseout", function () {
-        //     itemImage[i].style.opacity = '0.3';
-        // })
     }
 
     for (let i = 0; i < imageItems.length; i++) {

@@ -431,13 +431,12 @@ body, html {
 
 #main #content .product .product-item-cover {
     height: 100%;
-    width: 425px;
     display: flex;
     flex-wrap: wrap;
+    flex: 3;
 }
 
 #main #content .product .product-items {
-    width: 212px;
     height: 198px;
     padding: 16px;
     border: 1px solid #ccc;
@@ -489,6 +488,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.3s;
+    display: flex;
+    flex: 1;
+}
+#main #content .product .product-hover-items {
+    width: calc(100% / 2);
 }
 
 #main #content .product .product-hover-items,
